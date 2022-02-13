@@ -27,7 +27,8 @@
    db.movie.aggregate([{$match : {'rating ' : {$gte : 8  }  }} ]) 
 ```
 **Picture for above:**
--265
+![Screenshot (265)](https://user-images.githubusercontent.com/80479635/153769332-ab27e887-7cda-4df7-be6e-adb50b1f80d9.png)
+
 
 
 - genres do not contain "Thriller" or "Romance".
@@ -35,7 +36,7 @@
     db.movie.aggregate([{$match : {genre : {$ne : {$in : [ "Thriller", "Romance" ]}  }  }]) 
 ```
 **Picture for above**
--266
+![Screenshot (266)](https://user-images.githubusercontent.com/80479635/153769342-cbb5dab7-afad-4835-829e-1da5fc5b4e8f.png)
 
 
 - rated "PG"
@@ -47,9 +48,10 @@
 - languages contain English or French.
 ```js
     db.movie.aggregate([{$match : {language : {$in : [ "French", "English" ]}}}])
-``
+```
 **Picture for above**
-- 267
+![Screenshot (267)](https://user-images.githubusercontent.com/80479635/153769355-f0c4fd62-737f-4894-b6ed-97f102fa1fc3.png)
+
 
 - production_year after 2012
 
@@ -57,7 +59,8 @@
    db.movie.aggregate([{$match : { production_year : {$gt : 2012 } } }])
 ```
 **Picture for above**
--268
+![Screenshot (268)](https://user-images.githubusercontent.com/80479635/153769357-c70b7ad6-8640-436d-9398-73fd3b6ccbc8.png)
+
 
 
 # 2. you have been given a task by your manager.
@@ -101,7 +104,8 @@
 ]
 
 **Picture for above**
--269
+![Screenshot (269)](https://user-images.githubusercontent.com/80479635/153769365-1ef564ac-084e-4146-8a1b-2242baa88563.png)
+
 
 
 # 3. 
@@ -135,7 +139,8 @@
 ]
 
 **Picture for above query**
--270
+![Screenshot (270)](https://user-images.githubusercontent.com/80479635/153769375-248aaa65-b723-4618-acd1-0ca6c87739d5.png)
+
 
 
 # 4.
@@ -176,4 +181,4 @@ db.orders.insertMany([
 ```
 
 **picture for above**
--271
+![Screenshot (271)](https://user-images.githubusercontent.com/80479635/153769388-b8f19ecc-e84d-47f1-8e80-9a1afe6f96ac.png)
